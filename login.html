@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login DAMN ART</title>
+    <link rel="stylesheet" href="styleslogin.css">
+    <script src="login.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>DAMN ART</h1>
+    </header>
+
+    <div class="main-container">
+        <div class="gallery-container" id="gallery">
+            <img src="img/diseño1.jpeg" class="active" alt="Imagen 1">
+            <img src="img/diseño2.jpeg" alt="Imagen 2">
+            <img src="img/tote_bag.jpg" alt="Imagen 3">
+            <img src="img/diseño1.jpeg" alt="Imagen 4">
+        </div>
+
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Correo electrónico">
+                <span id="emailError" style="display:none; color: red;">Correo no válido.</span>
+
+                <input type="password" id="password" placeholder="Contraseña">
+                <span id="passwordError" style="display:none; color: red;">Contraseña demasiado corta.</span>
+
+                <button type="submit">Iniciar sesión</button>
+                <span id="error-message" style="display:none; color: red;">Credenciales incorrectas.</span>
+            </form>
+
+            <button id="recoverPasswordBtn">Olvidé mi contraseña</button>
+            <div id="recoverContainer" style="display: none;">
+                <input type="email" id="recoverEmail" placeholder="Ingresa tu correo">
+                <button id="sendCodeBtn">Enviar código</button>
+                <span id="recoverMessage" style="display: none; color: green;">Código enviado. Revisa tu correo.</span>
+                <span id="recoverError" style="display: none; color: red;">Correo no encontrado.</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
